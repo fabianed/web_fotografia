@@ -1,0 +1,303 @@
+* {
+	font-family: 'Dancing script', candara;
+	max-width: 900px;
+	margin: 0 auto;
+	background-color: *#02010a;
+}
+
+h1 {
+	text-shadow: 2px 2px 3px #02010a;
+}
+
+#main-header h1, #main-header nav, 
+#main-header ul, #main-header li, 
+#main-header a {
+	background-color: #5b7989;
+	color: #fff;
+	padding-right: 0.75vh;
+}
+
+#main-header nav li,
+.foot #red-social li {
+	list-style-type: none;
+	display: inline;
+}
+
+.foot #red-social li a {
+	color: #02010a;
+}
+
+img {
+	box-shadow: 2px 2px 6px #02010a;
+}
+
+.contenido {
+	background-color: #82c3a6;
+	text-align: center;
+	padding-top: 2vh;
+}
+
+.contenido .img_secundaria {
+	padding-top: 2vh;
+	background-color: #d5c75f;
+	text-align: center;
+}
+
+.galeria, .contenido .img_secundaria span {
+	background-color: #d5c75f;
+	text-shadow: 2px 2px 3px #ddd;
+	color: #02010a;
+	font-weight: bold;
+}
+
+.contenido .img_secundaria a,
+.foot #redes a {
+	text-decoration: none;
+}
+
+#main-header {
+	background-color: #5b7989;
+	padding: 2%;
+	border-radius: 10px 10px 0 0;
+	animation-duration: 3s;
+  animation-name: slidein;
+}
+
+@-webkit-keyframes slidein {
+  0% {
+  	margin-top: 150%;
+  }
+
+  60% {
+   	margin-top: -5%;
+  }
+
+  100% {
+  	margin-top: 0%;
+  }
+}
+
+#natural:hover{
+	transform: rotate(10deg);
+	box-shadow: 2px 2px 6px #82c3a6;
+	border: solid 2px #02010a;
+}
+
+#rostro:hover{
+	transform: translate(20px, -5px);
+	box-shadow: 2px 2px 6px #82c3a6;
+	border: solid 2px #02010a;
+}
+
+.foot {
+	background-color: #c6d5c5;
+	text-align: center;
+	padding: 0.1vh 0 2vh 0;
+	border-radius: 0 0 10px 10px;
+}
+
+.foot #resaltado {
+	font-size: 1.5em;
+	font-weight: bold;
+	margin-top: 25px;
+}
+
+.foot #red-social li {
+	list-style-type: none;
+	display: inline;
+}
+
+.foot #img-social {
+	height: 20px;
+	box-shadow: none;
+	padding-top: 7px;
+}
+
+body#inicio ul.menu li:nth-child(1) a,
+body#paisaje ul.menu li:nth-child(2) a,
+body#retrato ul.menu li:nth-child(3) a {
+	text-decoration: none;
+}
+
+.galeria {
+		text-align: center;
+	}
+
+.fotos img {
+	width: 60%;
+	height: auto;
+	margin: 1vh 0 0 0;
+}
+
+.fotos #imagen_1 {
+	-webkit-filter:blur(10px);
+}
+
+.fotos #imagen_2, .fotos #imagen_4,
+.fotos #imagen_6 {
+	-webkit-filter:grayscale(100%);
+}
+
+.fotos #imagen_3 {
+	-webkit-filter:sepia(90%);
+}
+
+/*
+/* Menos de 900 pixles
+*/
+
+@media screen and (max-width: 899px) {
+	h1 {
+		font-size: 6.5vw;
+		text-align: center;
+	}
+
+	nav {
+		margin-top: 0;
+		text-align: center;
+	}
+
+	nav li {
+		font-size: 120%;
+	}
+
+	#main-header {
+		border-radius: 0;
+		height: 75px;
+	}
+
+	.contenido #central {
+		width: 90%;
+		margin-bottom: 2vh;
+	}
+
+	.contenido .img_secundaria {
+	padding-bottom: 2vh;
+	}
+
+	.contenido .img_secundaria img {
+		width: 90%;
+		height: auto;
+	}
+
+	.contenido .img_secundaria span {
+		font-size: 5vw;
+	}
+
+	.contenido .img_secundaria #rostro {
+		margin-top: 5vh;
+	}
+
+	.foot {
+		border-radius: 0;
+	}
+
+	.foot #redes {
+		display: inline;
+	}
+
+	.foot #red-social li {
+		font-size: 2.5vh;
+		display: block;
+	}
+
+	.galeria {
+		text-align: center;
+	}
+
+	.fotos {
+		padding-bottom: 1vh;
+	}
+
+	.fotos img {
+		width: 60%;
+		height: auto;
+		margin: 1vh 0 0 0;
+	}
+}
+
+
+/*
+/* Mas de 900 pixeles
+*/
+
+@media screen and (min-width: 900px) {
+	h1 {
+		font-size: 3vw;
+		float: left;
+	}
+
+	#main-header nav {
+		margin-top: 15px;
+		float: right;
+	}
+
+	nav li {
+		font-size: 150%;
+	}
+
+	#main-header {
+		height: 50px;
+	}
+
+	.contenido #central {
+		width: 75%;
+		margin-bottom: 2vh;
+	}
+
+	.contenido .img_secundaria {
+		display: flex;
+		flex-wrap: nowrap;
+		padding-bottom: 2vh;
+	}
+
+	.contenido .img_secundaria img {
+		width: 80%;
+		height: auto;
+	}
+
+	.contenido .img_secundaria span {
+		font-size: 2.5vw;
+	}
+
+	.foot {
+		display: flex;
+		flex-wrap: nowrap;
+	}
+
+	.foot #red-social li {
+		display: block;
+		font-size: 2.5vh;
+	}
+
+	.foot #contacto {
+		width: 30%;
+	}
+
+	.foot #terminos {
+		width: 30%;
+	}
+
+	.foot #redes {
+		width: 20%;
+	}
+
+	.foot #derechos {
+		width: 20%;
+	}
+
+	.galeria {
+		display: flex;
+		flex-wrap: wrap;
+	}	
+
+	.fotos {
+		padding: 0 0 1.5vh 1.5vh;
+	}
+
+	.fotos img {
+		width: 30%;
+		margin: 2vh 2vh 0 0;
+	}
+}
+
